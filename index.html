@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRTC Bus Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="top-bar">
+      <div class="brand">
+        <img src="BRTC.png" alt="BRTC Bus" class="bus-icon">
+        <div>
+          <h1>BRTC RUNNER</h1>
+          <p>THE HIGHWAY CHALLENGE</p>
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div>
+          <span>DISTANCE</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>BEST</span>
+          <strong id="best">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <canvas id="gameCanvas" width="960" height="480"
+        aria-label="BRTC Bus Runner game"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <span class="panel-icon" id="panelIcon">🚌</span>
+          <h2 id="panelTitle">BRTC HIGHWAY RUN</h2>
+          <p id="panelText">
+            Hit the highway and avoid the traffic!
+          </p>
+          <button id="startBtn">START ENGINE</button>
+          <small>MADE BY JAMIL BHUYAN</small>
+        </div>
+      </div>
+    </section>
+
+    <footer class="game-footer">
+      <span>🏁 SURVIVE THE HIGHWAY</span>
+      <span>MADE FOR THE ROAD</span>
+    </footer>
+
+    <div class="mobile-controls">
+      <button id="leftBtn" aria-label="Move left">◀</button>
+      <button id="rightBtn" aria-label="Move right">▶</button>
+    </div>
+
+    <p class="help-text">
+      Use ← → or A/D to change lanes. Avoid cars and roadblocks.
+      Press P to pause.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
